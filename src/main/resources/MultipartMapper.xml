@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.mybatisStudy.repository.MemberRepository">
+    <insert id="insertMultipart">
+        INSERT INTO t_member_info
+               (
+                mi_mail
+              , mi_image1
+              , mi_image2
+              , mi_image3
+               )
+               VALUES
+               (
+                {miMail}
+              , {miImage1}
+              , {miImage2}
+              , {miImage3}
+               )
+    </insert>
+</mapper>
